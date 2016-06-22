@@ -1,3 +1,4 @@
+import Shapes.ShapesExample;
 import Windows.WindowExample;
 
 
@@ -8,7 +9,8 @@ public class mainClass {
 		WindowExample we = new WindowExample();
 		we.run();
 		
-		
+		ShapesExample se = new ShapesExample();
+		se.run();
 	}
 
 }
