@@ -1,5 +1,8 @@
 package Windows;
 
+import Shapes.FourSidesPolygon;
+import Shapes.ShapesFactory;
+
 public class WindowExample {
 	public void run() {
 		AbstractWindow w = new DialogWindow(new MacWindows());
@@ -8,7 +11,9 @@ public class WindowExample {
 		w = new ErrorMessage (new WindowsWindow());
 		w.Draw();
 		
-		w = new DrawingWindow(new LinuxWindow());
+		ShapesFactory sf = new FourSidesPolygon();
+		
+		w = new DrawingWindow(new LinuxWindow(), sf.CreateRegularPolygon());
 		w.Draw();
 	}
 }
