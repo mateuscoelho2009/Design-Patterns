@@ -1,6 +1,6 @@
-package Windows;
+import Windows.WindowExample;
 
-import Shapes.ShapesExample;
+
 
 public class mainClass {
 
@@ -8,10 +8,7 @@ public class mainClass {
 		WindowExample we = new WindowExample();
 		we.run();
 		
-		System.out.println("");
 		
-		ShapesExample se = new ShapesExample();
-		se.run();
 	}
 
 }
